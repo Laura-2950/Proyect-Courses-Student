@@ -6,13 +6,13 @@ REST que tendrá como objetivo mapear a los estudiantes de una escuela con su
 correspondiente curso. Ya contamos con el microservicio de estudiantes el cual expone una
 API que nos permite buscar los estudiantes. A su vez, esta API nos retorna un error en caso
 de que necesitemos probar el Circuit Breaker.
-###student-service
+### student-service
 API DOC:
 [GET]
 Endpoint: http://localhost:8086/students/findAll
 Params:
 throwError (true o false)
-####Ejemplos:
+#### Ejemplos:
 [GET]
 http://localhost:8086/students/findAll?throwError=false
 
@@ -48,7 +48,7 @@ Response:
 "error": "Internal Server Error",
 "path": "/students/findAll"
 }
-###course-service
+### course-service
 ● Crear una API que contenga un endpoint que nos permita buscar cursos por
 ID.
 
